@@ -76,7 +76,7 @@ obj_store = aas2openapi.convert_pydantic_model_to_aas(example_product)
 
 import basyx.aas.adapter.json.json_serialization
 
-with open("examples/simple_aas_and_submodels.json", "w", encoding="utf-8") as json_file:
+with open("../examples/simple_aas_and_submodels.json", "w", encoding="utf-8") as json_file:
     basyx.aas.adapter.json.write_aas_json_file(json_file, obj_store)
 
 
